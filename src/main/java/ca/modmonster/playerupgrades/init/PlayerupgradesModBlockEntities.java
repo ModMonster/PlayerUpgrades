@@ -18,6 +18,8 @@ public class PlayerupgradesModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, PlayerupgradesMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> PLAYER_UPGRADER = register("player_upgrader", PlayerupgradesModBlocks.PLAYER_UPGRADER, PlayerUpgraderBlockEntity::new);
 
+	// Start of user code block custom block entities
+	// End of user code block custom block entities
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}

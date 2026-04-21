@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "playerupgrades:blocks/player_upgrader",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "playerupgrades:player_upgrader"
+        }
+      ]
+    }
+  ]
+}

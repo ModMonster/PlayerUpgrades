@@ -6,11 +6,9 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import ca.modmonster.playerupgrades.init.PlayerupgradesModTabs;
-
 public class DiamondJumpBoostUpgradeItem extends Item {
 	public DiamondJumpBoostUpgradeItem() {
-		super(new Item.Properties().tab(PlayerupgradesModTabs.TAB_PLAYER_UPGRADES_TAB).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

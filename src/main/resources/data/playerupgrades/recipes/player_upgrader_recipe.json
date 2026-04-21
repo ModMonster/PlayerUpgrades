@@ -1,37 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "bcb",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:redstone"
     },
-    "1": {
+    "b": {
       "item": "minecraft:smooth_quartz"
     },
-    "2": {
-      "item": "minecraft:redstone"
-    },
-    "3": {
-      "item": "minecraft:smooth_quartz"
-    },
-    "4": {
+    "c": {
       "item": "minecraft:diamond_block"
-    },
-    "5": {
-      "item": "minecraft:smooth_quartz"
-    },
-    "6": {
-      "item": "minecraft:redstone"
-    },
-    "7": {
-      "item": "minecraft:smooth_quartz"
-    },
-    "8": {
-      "item": "minecraft:redstone"
     }
   },
   "result": {

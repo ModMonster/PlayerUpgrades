@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "playerupgrades:items/iron_strength_upgrade_texture"
+    "layer0": "playerupgrades:item/iron_strength_upgrade_texture"
   }
 }

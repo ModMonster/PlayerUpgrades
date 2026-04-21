@@ -3,7 +3,6 @@
     {
       "name": "PlayerUpgrader",
       "type": "block",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_upgrader",
@@ -11,6 +10,7 @@
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/block/PlayerUpgraderBlock.java",
           "src/main/resources/assets/playerupgrades/models/block/player_upgrader.json",
+          "src/main/resources/data/playerupgrades/loot_tables/blocks/player_upgrader.json",
           "src/main/resources/assets/playerupgrades/models/item/player_upgrader.json",
           "src/main/java/ca/modmonster/playerupgrades/block/entity/PlayerUpgraderBlockEntity.java",
           "src/main/resources/assets/playerupgrades/blockstates/player_upgrader.json"
@@ -20,7 +20,6 @@
     {
       "name": "PlayerUpgraderGui",
       "type": "gui",
-      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_upgrader_gui",
@@ -34,7 +33,6 @@
     {
       "name": "PlayerUpgradesTab",
       "type": "tab",
-      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_upgrades_tab",
@@ -45,7 +43,6 @@
     {
       "name": "IronHealthUpgrade",
       "type": "item",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_health_upgrade",
@@ -59,7 +56,6 @@
     {
       "name": "IronCase",
       "type": "item",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_case",
@@ -73,7 +69,6 @@
     {
       "name": "IronCaseRecipe",
       "type": "recipe",
-      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_case_recipe",
@@ -86,7 +81,6 @@
     {
       "name": "IronHealthUpgradeRecipe",
       "type": "recipe",
-      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_health_upgrade_recipe",
@@ -99,7 +93,6 @@
     {
       "name": "ApplyUpgrades",
       "type": "procedure",
-      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apply_upgrades",
@@ -134,7 +127,6 @@
     {
       "name": "IronSpeedUpgrade",
       "type": "item",
-      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_speed_upgrade",
@@ -148,7 +140,6 @@
     {
       "name": "IronSpeedUpgradeRecipe",
       "type": "recipe",
-      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_speed_upgrade_recipe",
@@ -161,7 +152,6 @@
     {
       "name": "IronHasteUpgrade",
       "type": "item",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_haste_upgrade",
@@ -175,7 +165,6 @@
     {
       "name": "IronHasteUpgradeRecipe",
       "type": "recipe",
-      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_haste_upgrade_recipe",
@@ -188,7 +177,6 @@
     {
       "name": "IronStrengthUpgrade",
       "type": "item",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_strength_upgrade",
@@ -202,7 +190,6 @@
     {
       "name": "IronJumpBoostUpgrade",
       "type": "item",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_jump_boost_upgrade",
@@ -216,7 +203,6 @@
     {
       "name": "PlayerUpgradeCraftAdvancement",
       "type": "achievement",
-      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_upgrade_craft_advancement",
@@ -229,7 +215,6 @@
     {
       "name": "UpgradeAppliedAdvancement",
       "type": "achievement",
-      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "upgrade_applied_advancement",
@@ -242,7 +227,6 @@
     {
       "name": "IronStrengthUpgradeRecipe",
       "type": "recipe",
-      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_strength_upgrade_recipe",
@@ -255,7 +239,6 @@
     {
       "name": "IronJumpBoostUpgradeRecipe",
       "type": "recipe",
-      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_jump_boost_upgrade_recipe",
@@ -268,7 +251,6 @@
     {
       "name": "DiamondCase",
       "type": "item",
-      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_case",
@@ -282,7 +264,6 @@
     {
       "name": "DiamondCaseRecipe",
       "type": "recipe",
-      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_case_recipe",
@@ -295,7 +276,6 @@
     {
       "name": "DiamondHealthUpgrade",
       "type": "item",
-      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_health_upgrade",
@@ -309,7 +289,6 @@
     {
       "name": "DiamondHealthUpgradeRecipe",
       "type": "recipe",
-      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_health_upgrade_recipe",
@@ -322,7 +301,6 @@
     {
       "name": "PlayerUpgraderRecipe",
       "type": "recipe",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_upgrader_recipe",
@@ -335,7 +313,6 @@
     {
       "name": "DiamondSpeedUpgrade",
       "type": "item",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_speed_upgrade",
@@ -349,7 +326,6 @@
     {
       "name": "DiamondHasteUpgrade",
       "type": "item",
-      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_haste_upgrade",
@@ -363,7 +339,6 @@
     {
       "name": "DiamondStrengthUpgrade",
       "type": "item",
-      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_strength_upgrade",
@@ -377,7 +352,6 @@
     {
       "name": "DiamondJumpBoostUpgrade",
       "type": "item",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_jump_boost_upgrade",
@@ -391,7 +365,6 @@
     {
       "name": "DiamondUpgradeApplyAdvancement",
       "type": "achievement",
-      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_upgrade_apply_advancement",
@@ -404,7 +377,6 @@
     {
       "name": "DiamondSpeedUpgradeRecipe",
       "type": "recipe",
-      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_speed_upgrade_recipe",
@@ -417,7 +389,6 @@
     {
       "name": "DiamondHasteUpgradeRecipe",
       "type": "recipe",
-      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_haste_upgrade_recipe",
@@ -430,7 +401,6 @@
     {
       "name": "DiamondJumpBoostUpgradeRecipe",
       "type": "recipe",
-      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_jump_boost_upgrade_recipe",
@@ -443,7 +413,6 @@
     {
       "name": "NetherCase",
       "type": "item",
-      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nether_case",
@@ -457,7 +426,6 @@
     {
       "name": "NetherUpgradeCaseRecipe",
       "type": "recipe",
-      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nether_upgrade_case_recipe",
@@ -470,7 +438,6 @@
     {
       "name": "FlyUpgrade",
       "type": "item",
-      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fly_upgrade",
@@ -484,7 +451,6 @@
     {
       "name": "FlyUpgradeRecipe",
       "type": "recipe",
-      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fly_upgrade_recipe",
@@ -497,7 +463,6 @@
     {
       "name": "FireResistanceUpgrade",
       "type": "item",
-      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fire_resistance_upgrade",
@@ -511,7 +476,6 @@
     {
       "name": "FireResistanceUpgradeRecipe",
       "type": "recipe",
-      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fire_resistance_upgrade_recipe",
@@ -524,7 +488,6 @@
     {
       "name": "WaterBreathingUpgrade",
       "type": "item",
-      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_breathing_upgrade",
@@ -538,7 +501,6 @@
     {
       "name": "WaterBreathingUpgradeRecipe",
       "type": "recipe",
-      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_breathing_upgrade_recipe",
@@ -551,7 +513,6 @@
     {
       "name": "FlyApply",
       "type": "achievement",
-      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fly_apply",
@@ -564,7 +525,6 @@
     {
       "name": "FireResistanceApply",
       "type": "achievement",
-      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fire_resistance_apply",
@@ -577,7 +537,6 @@
     {
       "name": "WaterBreathingApply",
       "type": "achievement",
-      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_breathing_apply",
@@ -590,7 +549,6 @@
     {
       "name": "StarryIngot",
       "type": "item",
-      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "starry_ingot",
@@ -604,7 +562,6 @@
     {
       "name": "StarryIngotRecipe",
       "type": "recipe",
-      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "starry_ingot_recipe",
@@ -648,6 +605,15 @@
     }
   ],
   "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:PlayerUpgrader"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:PlayerUpgrader"
+    ]
+  },
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.playerupgrades.diamond_strength_upgrade": "Improved Strength Upgrade",
@@ -663,6 +629,7 @@
       "advancements.fly_apply.title": "I Believe I Can Fly!",
       "item.playerupgrades.diamond_case": "Improved Upgrade Case",
       "gui.playerupgrades.player_upgrader_gui.label_player_upgrader": "Player Upgrader",
+      "item_group.playerupgrades.player_upgrades_tab": "Player Upgrades",
       "advancements.fly_apply.descr": "Craft and apply a Flying Upgrade.",
       "item.playerupgrades.iron_jump_boost_upgrade": "Basic Jumping Upgrade",
       "item.playerupgrades.diamond_speed_upgrade": "Improved Speed Upgrade",
@@ -671,11 +638,15 @@
       "item.playerupgrades.fly_upgrade": "Flying Upgrade",
       "item.playerupgrades.fire_resistance_upgrade": "Fire Resistance Upgrade",
       "advancements.upgrade_applied_advancement.descr": "Craft and apply a Basic Upgrade.",
+      "item.playerupgrades.diamond_strength_upgrade.description_0": "Too OP: only obtainable in Creative Mode and through commands.",
       "item.playerupgrades.iron_speed_upgrade": "Basic Speed Upgrade",
       "advancements.diamond_upgrade_apply_advancement.title": "Upgrading The Upgrades!",
       "advancements.fire_resistance_apply.title": "Sizzling Skin",
       "item.playerupgrades.diamond_jump_boost_upgrade": "Improved Jumping Upgrade",
       "advancements.fire_resistance_apply.descr": "Craft and apply a Fire Resistance Upgrade.",
+      "item.playerupgrades.fly_upgrade.description_0": "Only 1 Nether Upgrade is allowed per Upgrader.",
+      "item.playerupgrades.fire_resistance_upgrade.description_0": "Only 1 Nether Upgrade is allowed per Upgrader.",
+      "item.playerupgrades.water_breathing_upgrade.description_0": "Only 1 Nether Upgrade is allowed per Upgrader.",
       "item.playerupgrades.iron_case": "Basic Upgrade Case",
       "advancements.water_breathing_apply.title": "Swimming With The Fishies!",
       "item.playerupgrades.diamond_haste_upgrade": "Improved Mining Upgrade",
@@ -696,17 +667,15 @@
     "author": "ModMonster",
     "websiteURL": "https://modmonster.ca",
     "license": "MIT License",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.19.2",
+    "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "ca.modmonster.playerupgrades",
-    "lockBaseModFiles": false
+    "modElementsPackage": "ca.modmonster.playerupgrades"
   },
-  "mcreatorVersion": 202300110610
+  "mcreatorVersion": 202400452410
 }

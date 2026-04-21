@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "playerupgrades:items/diamond_case_texture"
+    "layer0": "playerupgrades:item/diamond_case_texture"
   }
 }

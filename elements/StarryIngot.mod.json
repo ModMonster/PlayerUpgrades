@@ -1,15 +1,19 @@
 {
-  "_fv": 39,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "starry_ingot",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Starry Ingot",
     "rarity": "RARE",
-    "creativeTab": {
-      "value": "CUSTOM:PlayerUpgradesTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:PlayerUpgradesTab"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
@@ -24,16 +28,26 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
-    "hasGlow": true,
-    "guiBoundTo": "<NONE>",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "eat",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

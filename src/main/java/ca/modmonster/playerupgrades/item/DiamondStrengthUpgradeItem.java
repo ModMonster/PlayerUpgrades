@@ -11,11 +11,9 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-import ca.modmonster.playerupgrades.init.PlayerupgradesModTabs;
-
 public class DiamondStrengthUpgradeItem extends Item {
 	public DiamondStrengthUpgradeItem() {
-		super(new Item.Properties().tab(PlayerupgradesModTabs.TAB_PLAYER_UPGRADES_TAB).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -24,8 +22,8 @@ public class DiamondStrengthUpgradeItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Too OP: only obtainable in Creative Mode and through commands."));
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.translatable("item.playerupgrades.diamond_strength_upgrade.description_0"));
 	}
 }

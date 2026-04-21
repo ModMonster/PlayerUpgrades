@@ -1,26 +1,29 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[47,)"
 license="MIT License"
 
 [[mods]]
 modId="playerupgrades"
 version="2.0.0"
 displayName="Player Upgrades"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://modmonster.ca"
 logoFile="logo.png"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="ModMonster"
-description='''
-A mod that adds upgrades to enhance your player!
-'''
+description="A mod that adds upgrades to enhance your player!"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
 
 [[dependencies.playerupgrades]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
-    ordering="NONE"
+    versionRange="[1.20.1]"
+    ordering="AFTER"
     side="BOTH"
 
 
 
 
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

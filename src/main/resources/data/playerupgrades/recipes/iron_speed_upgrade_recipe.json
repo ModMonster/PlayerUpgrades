@@ -1,37 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "cdc",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:sugar"
     },
-    "1": {
+    "b": {
       "item": "minecraft:redstone"
     },
-    "2": {
-      "item": "minecraft:sugar"
-    },
-    "3": {
+    "c": {
       "item": "minecraft:diamond"
     },
-    "4": {
+    "d": {
       "item": "playerupgrades:iron_case"
-    },
-    "5": {
-      "item": "minecraft:diamond"
-    },
-    "6": {
-      "item": "minecraft:sugar"
-    },
-    "7": {
-      "item": "minecraft:redstone"
-    },
-    "8": {
-      "item": "minecraft:sugar"
     }
   },
   "result": {

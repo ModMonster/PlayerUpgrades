@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "playerupgrades:blocks/player_upgrader_bottom",
-    "up": "playerupgrades:blocks/player_upgrader_top",
-    "north": "playerupgrades:blocks/player_upgrader_side",
-    "east": "playerupgrades:blocks/player_upgrader_side",
-    "south": "playerupgrades:blocks/player_upgrader_side",
-    "west": "playerupgrades:blocks/player_upgrader_side",
-    "particle": "playerupgrades:blocks/player_upgrader_bottom"
+    "down": "playerupgrades:block/player_upgrader_bottom",
+    "up": "playerupgrades:block/player_upgrader_top",
+    "north": "playerupgrades:block/player_upgrader_side",
+    "east": "playerupgrades:block/player_upgrader_side",
+    "south": "playerupgrades:block/player_upgrader_side",
+    "west": "playerupgrades:block/player_upgrader_side",
+    "particle": "playerupgrades:block/player_upgrader_bottom"
   },
   "render_type": "solid"
 }

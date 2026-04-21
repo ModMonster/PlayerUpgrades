@@ -1,37 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "cdc",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:redstone_block"
     },
-    "1": {
+    "b": {
       "item": "minecraft:sugar"
     },
-    "2": {
-      "item": "minecraft:redstone_block"
-    },
-    "3": {
+    "c": {
       "item": "playerupgrades:iron_speed_upgrade"
     },
-    "4": {
+    "d": {
       "item": "playerupgrades:diamond_case"
-    },
-    "5": {
-      "item": "playerupgrades:iron_speed_upgrade"
-    },
-    "6": {
-      "item": "minecraft:redstone_block"
-    },
-    "7": {
-      "item": "minecraft:sugar"
-    },
-    "8": {
-      "item": "minecraft:redstone_block"
     }
   },
   "result": {

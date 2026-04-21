@@ -14,11 +14,9 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-import ca.modmonster.playerupgrades.init.PlayerupgradesModTabs;
-
 public class WaterBreathingUpgradeItem extends Item {
 	public WaterBreathingUpgradeItem() {
-		super(new Item.Properties().tab(PlayerupgradesModTabs.TAB_PLAYER_UPGRADES_TAB).stacksTo(64).rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE));
 	}
 
 	@Override
@@ -33,8 +31,8 @@ public class WaterBreathingUpgradeItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Only 1 Nether Upgrade is allowed per Upgrader."));
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.translatable("item.playerupgrades.water_breathing_upgrade.description_0"));
 	}
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "playerupgrades:items/starry_ingot"
+    "layer0": "playerupgrades:item/starry_ingot"
   }
 }

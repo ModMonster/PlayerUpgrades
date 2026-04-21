@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "diamond_upgrade_apply_advancement": {
+    "diamond_upgrade_apply_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

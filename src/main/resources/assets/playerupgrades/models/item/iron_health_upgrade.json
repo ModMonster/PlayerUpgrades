@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "playerupgrades:items/iron_health_texture"
+    "layer0": "playerupgrades:item/iron_health_texture"
   }
 }

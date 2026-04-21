@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "fire_resistance_apply": {
+    "fire_resistance_apply_0": {
       "trigger": "minecraft:impossible"
     }
   },

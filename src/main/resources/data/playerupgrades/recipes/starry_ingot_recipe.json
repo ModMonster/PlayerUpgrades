@@ -1,25 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " a "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:iron_ingot"
     },
-    "3": {
-      "item": "minecraft:iron_ingot"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:nether_star"
-    },
-    "5": {
-      "item": "minecraft:iron_ingot"
-    },
-    "7": {
-      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

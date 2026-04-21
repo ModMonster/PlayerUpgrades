@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "upgrade_applied_advancement": {
+    "upgrade_applied_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },

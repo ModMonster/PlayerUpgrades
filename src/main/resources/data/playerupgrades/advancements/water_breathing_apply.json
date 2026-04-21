@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "water_breathing_apply": {
+    "water_breathing_apply_0": {
       "trigger": "minecraft:impossible"
     }
   },

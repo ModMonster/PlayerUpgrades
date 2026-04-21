@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "playerupgrades:items/water_breathing_upgrade_texture"
+    "layer0": "playerupgrades:item/water_breathing_upgrade_texture"
   }
 }
