@@ -1,5 +1,6 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[36,)"
+license="MIT License"
 
 [[mods]]
 modId="playerupgrades"
@@ -16,7 +17,7 @@ A mod that adds upgrades to enhance your player!
 [[dependencies.playerupgrades]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
 

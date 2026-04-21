@@ -35,15 +35,9 @@ import ca.modmonster.playerupgrades.item.DiamondJumpBoostUpgradeItem;
 import ca.modmonster.playerupgrades.item.DiamondHealthUpgradeItem;
 import ca.modmonster.playerupgrades.item.DiamondHasteUpgradeItem;
 import ca.modmonster.playerupgrades.PlayerupgradesModVariables;
-import ca.modmonster.playerupgrades.PlayerupgradesModElements;
 import ca.modmonster.playerupgrades.PlayerupgradesMod;
 
-@PlayerupgradesModElements.ModElement.Tag
-public class ApplyUpgradesProcedure extends PlayerupgradesModElements.ModElement {
-	public ApplyUpgradesProcedure(PlayerupgradesModElements instance) {
-		super(instance, 23);
-	}
-
+public class ApplyUpgradesProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

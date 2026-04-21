@@ -13,7 +13,6 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
@@ -31,6 +30,7 @@ import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -72,7 +72,7 @@ public class PlayerUpgraderBlock extends PlayerupgradesModElements.ModElement {
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public PlayerUpgraderBlock(PlayerupgradesModElements instance) {
 		super(instance, 1);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
 	@Override
@@ -81,15 +81,17 @@ public class PlayerUpgraderBlock extends PlayerupgradesModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(PlayerUpgradesTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-
-	@SubscribeEvent
-	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("player_upgrader"));
+	private static class TileEntityRegisterHandler {
+		@SubscribeEvent
+		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("player_upgrader"));
+		}
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 21f).lightValue(0).harvestLevel(1)
-					.harvestTool(ToolType.PICKAXE));
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 21f).setLightLevel(s -> 0).harvestLevel(1)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("player_upgrader");
 		}
 
@@ -99,7 +101,7 @@ public class PlayerUpgraderBlock extends PlayerupgradesModElements.ModElement {
 		}
 
 		@Override
-		public MaterialColor getMaterialColor(BlockState state, IBlockReader blockAccess, BlockPos pos) {
+		public MaterialColor getMaterialColor() {
 			return MaterialColor.LIGHT_BLUE;
 		}
 
@@ -210,8 +212,8 @@ public class PlayerUpgraderBlock extends PlayerupgradesModElements.ModElement {
 		}
 
 		@Override
-		public void read(CompoundNBT compound) {
-			super.read(compound);
+		public void read(BlockState blockState, CompoundNBT compound) {
+			super.read(blockState, compound);
 			if (!this.checkLootAndRead(compound)) {
 				this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
 			}
@@ -239,7 +241,7 @@ public class PlayerUpgraderBlock extends PlayerupgradesModElements.ModElement {
 
 		@Override
 		public void onDataPacket(NetworkManager net, SUpdateTileEntityPacket pkt) {
-			this.read(pkt.getNbtCompound());
+			this.read(this.getBlockState(), pkt.getNbtCompound());
 		}
 
 		@Override
