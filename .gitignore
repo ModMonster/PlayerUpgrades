@@ -1,0 +1,26 @@
+# Gradle build outputs
+build/
+.gradle/
+
+# MCreator temporary and run files
+run/
+.mcreator/
+logs/
+
+# IDE specific files (if you use external editors)
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project/
+.classpath/
+
+# OS specific files
+.DS_Store
+thumbs.db
+
+# Large binary files
+*.jar
+*.zip

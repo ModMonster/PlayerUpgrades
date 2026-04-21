@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "playerupgrades:fire_resistance_upgrade"
+    },
+    "title": {
+      "translate": "advancements.fire_resistance_apply.title"
+    },
+    "description": {
+      "translate": "advancements.fire_resistance_apply.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fire_resistance_apply": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "playerupgrades:player_upgrade_craft_advancement"
+}

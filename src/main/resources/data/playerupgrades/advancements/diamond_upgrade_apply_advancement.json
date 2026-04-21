@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "playerupgrades:diamond_case"
+    },
+    "title": {
+      "translate": "advancements.diamond_upgrade_apply_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.diamond_upgrade_apply_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "diamond_upgrade_apply_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "playerupgrades:upgrade_applied_advancement"
+}

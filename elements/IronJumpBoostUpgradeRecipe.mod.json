@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:IronCase"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IronJumpBoostUpgrade"
+    },
+    "name": "iron_jump_boost_upgrade_recipe",
+    "namespace": "mod"
+  }
+}

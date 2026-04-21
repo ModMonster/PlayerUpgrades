@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "playerupgrades:iron_case"
+    },
+    "title": {
+      "translate": "advancements.upgrade_applied_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.upgrade_applied_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "upgrade_applied_advancement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "playerupgrades:player_upgrade_craft_advancement"
+}

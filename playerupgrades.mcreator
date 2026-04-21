@@ -1,0 +1,516 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "PlayerUpgrader",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_upgrader"
+    },
+    {
+      "name": "PlayerUpgraderGui",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_upgrader_gui"
+    },
+    {
+      "name": "PlayerUpgradesTab",
+      "type": "tab",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_upgrades_tab"
+    },
+    {
+      "name": "IronHealthUpgrade",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_health_upgrade"
+    },
+    {
+      "name": "IronCase",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_case"
+    },
+    {
+      "name": "IronCaseRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_case_recipe"
+    },
+    {
+      "name": "IronHealthUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_health_upgrade_recipe"
+    },
+    {
+      "name": "ApplyUpgrades",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apply_upgrades",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronSpeedUpgrade",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_speed_upgrade"
+    },
+    {
+      "name": "IronSpeedUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_speed_upgrade_recipe"
+    },
+    {
+      "name": "IronHasteUpgrade",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_haste_upgrade"
+    },
+    {
+      "name": "IronHasteUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_haste_upgrade_recipe"
+    },
+    {
+      "name": "IronStrengthUpgrade",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_strength_upgrade"
+    },
+    {
+      "name": "IronJumpBoostUpgrade",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_jump_boost_upgrade"
+    },
+    {
+      "name": "PlayerUpgradeCraftAdvancement",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_upgrade_craft_advancement"
+    },
+    {
+      "name": "UpgradeAppliedAdvancement",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "upgrade_applied_advancement"
+    },
+    {
+      "name": "IronStrengthUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_strength_upgrade_recipe"
+    },
+    {
+      "name": "IronJumpBoostUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_jump_boost_upgrade_recipe"
+    },
+    {
+      "name": "DiamondCase",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_case"
+    },
+    {
+      "name": "DiamondCaseRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_case_recipe"
+    },
+    {
+      "name": "DiamondHealthUpgrade",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_health_upgrade"
+    },
+    {
+      "name": "DiamondHealthUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_health_upgrade_recipe"
+    },
+    {
+      "name": "PlayerUpgraderRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "player_upgrader_recipe"
+    },
+    {
+      "name": "DiamondSpeedUpgrade",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_speed_upgrade"
+    },
+    {
+      "name": "DiamondHasteUpgrade",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_haste_upgrade"
+    },
+    {
+      "name": "DiamondStrengthUpgrade",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_strength_upgrade"
+    },
+    {
+      "name": "DiamondJumpBoostUpgrade",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_jump_boost_upgrade"
+    },
+    {
+      "name": "DiamondUpgradeApplyAdvancement",
+      "type": "achievement",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_upgrade_apply_advancement"
+    },
+    {
+      "name": "DiamondSpeedUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_speed_upgrade_recipe"
+    },
+    {
+      "name": "DiamondHasteUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_haste_upgrade_recipe"
+    },
+    {
+      "name": "DiamondJumpBoostUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_jump_boost_upgrade_recipe"
+    },
+    {
+      "name": "NetherCase",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_case"
+    },
+    {
+      "name": "NetherUpgradeCaseRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_upgrade_case_recipe"
+    },
+    {
+      "name": "FlyUpgrade",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_upgrade"
+    },
+    {
+      "name": "FlyUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_upgrade_recipe"
+    },
+    {
+      "name": "FireResistanceUpgrade",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_resistance_upgrade"
+    },
+    {
+      "name": "FireResistanceUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_resistance_upgrade_recipe"
+    },
+    {
+      "name": "WaterBreathingUpgrade",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_breathing_upgrade"
+    },
+    {
+      "name": "WaterBreathingUpgradeRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_breathing_upgrade_recipe"
+    },
+    {
+      "name": "FlyApply",
+      "type": "achievement",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_apply"
+    },
+    {
+      "name": "FireResistanceApply",
+      "type": "achievement",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_resistance_apply"
+    },
+    {
+      "name": "WaterBreathingApply",
+      "type": "achievement",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "water_breathing_apply"
+    },
+    {
+      "name": "StarryIngot",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "starry_ingot"
+    },
+    {
+      "name": "StarryIngotRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "starry_ingot_recipe"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "healthCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "speedCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "hasteCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "strengthCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "jumpBoostCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.playerupgrades.diamond_strength_upgrade": "Improved Strength Upgrade",
+      "item.playerupgrades.water_breathing_upgrade": "Water Breathing Upgrade",
+      "block.playerupgrades.player_upgrader": "Upgrader",
+      "advancements.upgrade_applied_advancement.title": "Consider Yourself Upgraded!",
+      "item.playerupgrades.diamond_health_upgrade": "Improved Health Upgrade",
+      "item.playerupgrades.iron_health_upgrade": "Basic Health Upgrade",
+      "advancements.water_breathing_apply.descr": "Craft and apply a Water Breathing Upgrade.",
+      "itemGroup.tabplayer_upgrades_tab": "Player Upgrades",
+      "advancements.player_upgrade_craft_advancement.descr": "Craft the Upgrader.",
+      "advancements.player_upgrade_craft_advancement.title": "Player Upgrades",
+      "advancements.fly_apply.title": "I Believe I Can Fly!",
+      "item.playerupgrades.diamond_case": "Improved Upgrade Case",
+      "advancements.fly_apply.descr": "Craft and apply a Flying Upgrade.",
+      "item.playerupgrades.iron_jump_boost_upgrade": "Basic Jumping Upgrade",
+      "item.playerupgrades.diamond_speed_upgrade": "Improved Speed Upgrade",
+      "advancements.diamond_upgrade_apply_advancement.descr": "Craft and apply an Improved Upgrade!",
+      "item.playerupgrades.iron_haste_upgrade": "Basic Mining Upgrade",
+      "item.playerupgrades.fly_upgrade": "Flying Upgrade",
+      "item.playerupgrades.fire_resistance_upgrade": "Fire Resistance Upgrade",
+      "advancements.upgrade_applied_advancement.descr": "Craft and apply a Basic Upgrade.",
+      "item.playerupgrades.iron_speed_upgrade": "Basic Speed Upgrade",
+      "advancements.diamond_upgrade_apply_advancement.title": "Upgrading The Upgrades!",
+      "advancements.fire_resistance_apply.title": "Sizzling Skin",
+      "item.playerupgrades.diamond_jump_boost_upgrade": "Improved Jumping Upgrade",
+      "advancements.fire_resistance_apply.descr": "Craft and apply a Fire Resistance Upgrade.",
+      "item.playerupgrades.iron_case": "Basic Upgrade Case",
+      "advancements.water_breathing_apply.title": "Swimming With The Fishies!",
+      "item.playerupgrades.diamond_haste_upgrade": "Improved Mining Upgrade",
+      "item.playerupgrades.nether_case": "Nether Upgrade Case",
+      "item.playerupgrades.iron_strength_upgrade": "Basic Strength Upgrade",
+      "item.playerupgrades.starry_ingot": "Starry Ingot"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "playerupgrades",
+    "modName": "Player Upgrades",
+    "version": "2.0.0",
+    "author": "ModMonster",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.modmonster.playerupgrades",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

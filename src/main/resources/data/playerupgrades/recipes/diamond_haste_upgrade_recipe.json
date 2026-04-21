@@ -1,0 +1,42 @@
+{
+  "group": "playerupgrades",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:redstone_block"
+    },
+    "1": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "2": {
+      "item": "minecraft:redstone_block"
+    },
+    "3": {
+      "item": "playerupgrades:iron_haste_upgrade"
+    },
+    "4": {
+      "item": "playerupgrades:diamond_case"
+    },
+    "5": {
+      "item": "playerupgrades:iron_haste_upgrade"
+    },
+    "6": {
+      "item": "minecraft:redstone_block"
+    },
+    "7": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "8": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "playerupgrades:diamond_haste_upgrade",
+    "count": 1
+  }
+}

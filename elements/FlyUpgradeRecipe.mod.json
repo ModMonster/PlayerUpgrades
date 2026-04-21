@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.ELYTRA"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.DRAGON_BREATH"
+      },
+      {
+        "value": "CUSTOM:NetherCase"
+      },
+      {
+        "value": "Items.DRAGON_BREATH"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.DRAGON_BREATH"
+      },
+      {
+        "value": "Items.REDSTONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FlyUpgrade"
+    },
+    "name": "fly_upgrade_recipe",
+    "namespace": "mod"
+  }
+}

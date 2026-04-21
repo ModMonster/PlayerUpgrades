@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "playerupgrades:items/fly_upgrade_texture"
+  }
+}

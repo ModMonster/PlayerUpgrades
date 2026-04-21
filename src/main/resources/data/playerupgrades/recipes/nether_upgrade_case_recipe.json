@@ -1,0 +1,27 @@
+{
+  "group": "playerupgrades",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "playerupgrades:starry_ingot"
+    },
+    "3": {
+      "item": "playerupgrades:starry_ingot"
+    },
+    "5": {
+      "item": "playerupgrades:starry_ingot"
+    },
+    "7": {
+      "item": "playerupgrades:starry_ingot"
+    }
+  },
+  "result": {
+    "item": "playerupgrades:nether_case",
+    "count": 1
+  }
+}

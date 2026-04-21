@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "CUSTOM:IronSpeedUpgrade"
+      },
+      {
+        "value": "CUSTOM:DiamondCase"
+      },
+      {
+        "value": "CUSTOM:IronSpeedUpgrade"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DiamondSpeedUpgrade"
+    },
+    "name": "diamond_speed_upgrade_recipe",
+    "namespace": "mod"
+  }
+}

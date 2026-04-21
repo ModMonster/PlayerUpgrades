@@ -1,0 +1,42 @@
+{
+  "group": "playerupgrades",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:redstone_block"
+    },
+    "1": {
+      "item": "minecraft:golden_apple"
+    },
+    "2": {
+      "item": "minecraft:redstone_block"
+    },
+    "3": {
+      "item": "playerupgrades:iron_health_upgrade"
+    },
+    "4": {
+      "item": "playerupgrades:diamond_case"
+    },
+    "5": {
+      "item": "playerupgrades:iron_health_upgrade"
+    },
+    "6": {
+      "item": "minecraft:redstone_block"
+    },
+    "7": {
+      "item": "minecraft:golden_apple"
+    },
+    "8": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "playerupgrades:diamond_health_upgrade",
+    "count": 1
+  }
+}

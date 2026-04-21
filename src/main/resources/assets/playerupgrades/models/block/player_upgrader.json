@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "playerupgrades:blocks/player_upgrader_bottom",
+    "up": "playerupgrades:blocks/player_upgrader_top",
+    "north": "playerupgrades:blocks/player_upgrader_side",
+    "east": "playerupgrades:blocks/player_upgrader_side",
+    "south": "playerupgrades:blocks/player_upgrader_side",
+    "west": "playerupgrades:blocks/player_upgrader_side",
+    "particle": "playerupgrades:blocks/player_upgrader_bottom"
+  }
+}

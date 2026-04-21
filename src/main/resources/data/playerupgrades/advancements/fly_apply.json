@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "playerupgrades:fly_upgrade"
+    },
+    "title": {
+      "translate": "advancements.fly_apply.title"
+    },
+    "description": {
+      "translate": "advancements.fly_apply.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fly_apply": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "playerupgrades:player_upgrade_craft_advancement"
+}
