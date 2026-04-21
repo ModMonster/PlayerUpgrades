@@ -15,7 +15,7 @@ import ca.modmonster.playerupgrades.block.entity.PlayerUpgraderBlockEntity;
 import ca.modmonster.playerupgrades.PlayerupgradesMod;
 
 public class PlayerupgradesModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, PlayerupgradesMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, PlayerupgradesMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> PLAYER_UPGRADER = register("player_upgrader", PlayerupgradesModBlocks.PLAYER_UPGRADER, PlayerUpgraderBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {

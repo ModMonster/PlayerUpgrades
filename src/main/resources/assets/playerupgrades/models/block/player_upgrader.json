@@ -8,5 +8,6 @@
     "south": "playerupgrades:blocks/player_upgrader_side",
     "west": "playerupgrades:blocks/player_upgrader_side",
     "particle": "playerupgrades:blocks/player_upgrader_bottom"
-  }
+  },
+  "render_type": "solid"
 }

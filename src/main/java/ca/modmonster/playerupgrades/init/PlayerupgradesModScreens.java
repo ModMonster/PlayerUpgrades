@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package ca.modmonster.playerupgrades.init;
 
@@ -18,7 +18,7 @@ public class PlayerupgradesModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(PlayerupgradesModMenus.PLAYER_UPGRADER_GUI, PlayerUpgraderGuiScreen::new);
+			MenuScreens.register(PlayerupgradesModMenus.PLAYER_UPGRADER_GUI.get(), PlayerUpgraderGuiScreen::new);
 		});
 	}
 }

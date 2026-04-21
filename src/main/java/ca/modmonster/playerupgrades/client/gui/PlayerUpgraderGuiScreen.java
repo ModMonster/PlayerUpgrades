@@ -1,11 +1,9 @@
-
 package ca.modmonster.playerupgrades.client.gui;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
@@ -69,7 +67,7 @@ public class PlayerUpgraderGuiScreen extends AbstractContainerScreen<PlayerUpgra
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, new TranslatableComponent("gui.playerupgrades.player_upgrader_gui.label_player_upgrader"), 48, 25, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.playerupgrades.player_upgrader_gui.label_player_upgrader"), 48, 25, -12829636);
 	}
 
 	@Override
