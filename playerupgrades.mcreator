@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "PlayerUpgrader",
@@ -7,8 +6,16 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "player_upgrader"
+      "registry_name": "player_upgrader",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/block/PlayerUpgraderBlock.java",
+          "src/main/resources/assets/playerupgrades/models/block/player_upgrader.json",
+          "src/main/resources/assets/playerupgrades/models/item/player_upgrader.json",
+          "src/main/java/ca/modmonster/playerupgrades/block/entity/PlayerUpgraderBlockEntity.java",
+          "src/main/resources/assets/playerupgrades/blockstates/player_upgrader.json"
+        ]
+      }
     },
     {
       "name": "PlayerUpgraderGui",
@@ -16,8 +23,13 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "player_upgrader_gui"
+      "registry_name": "player_upgrader_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/client/gui/PlayerUpgraderGuiScreen.java",
+          "src/main/java/ca/modmonster/playerupgrades/world/inventory/PlayerUpgraderGuiMenu.java"
+        ]
+      }
     },
     {
       "name": "PlayerUpgradesTab",
@@ -25,8 +37,10 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "player_upgrades_tab"
+      "registry_name": "player_upgrades_tab",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "IronHealthUpgrade",
@@ -34,8 +48,13 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_health_upgrade"
+      "registry_name": "iron_health_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/IronHealthUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/iron_health_upgrade.json"
+        ]
+      }
     },
     {
       "name": "IronCase",
@@ -43,8 +62,13 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_case"
+      "registry_name": "iron_case",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/IronCaseItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/iron_case.json"
+        ]
+      }
     },
     {
       "name": "IronCaseRecipe",
@@ -52,8 +76,12 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_case_recipe"
+      "registry_name": "iron_case_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/iron_case_recipe.json"
+        ]
+      }
     },
     {
       "name": "IronHealthUpgradeRecipe",
@@ -61,8 +89,12 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_health_upgrade_recipe"
+      "registry_name": "iron_health_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/iron_health_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "ApplyUpgrades",
@@ -70,9 +102,11 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "apply_upgrades",
       "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/procedures/ApplyUpgradesProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -103,8 +137,13 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_speed_upgrade"
+      "registry_name": "iron_speed_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/iron_speed_upgrade.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/IronSpeedUpgradeItem.java"
+        ]
+      }
     },
     {
       "name": "IronSpeedUpgradeRecipe",
@@ -112,8 +151,12 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_speed_upgrade_recipe"
+      "registry_name": "iron_speed_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/iron_speed_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "IronHasteUpgrade",
@@ -121,8 +164,13 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_haste_upgrade"
+      "registry_name": "iron_haste_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/IronHasteUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/iron_haste_upgrade.json"
+        ]
+      }
     },
     {
       "name": "IronHasteUpgradeRecipe",
@@ -130,8 +178,12 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_haste_upgrade_recipe"
+      "registry_name": "iron_haste_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/iron_haste_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "IronStrengthUpgrade",
@@ -139,8 +191,13 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_strength_upgrade"
+      "registry_name": "iron_strength_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/IronStrengthUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/iron_strength_upgrade.json"
+        ]
+      }
     },
     {
       "name": "IronJumpBoostUpgrade",
@@ -148,8 +205,13 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_jump_boost_upgrade"
+      "registry_name": "iron_jump_boost_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/iron_jump_boost_upgrade.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/IronJumpBoostUpgradeItem.java"
+        ]
+      }
     },
     {
       "name": "PlayerUpgradeCraftAdvancement",
@@ -157,8 +219,12 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "player_upgrade_craft_advancement"
+      "registry_name": "player_upgrade_craft_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/advancements/player_upgrade_craft_advancement.json"
+        ]
+      }
     },
     {
       "name": "UpgradeAppliedAdvancement",
@@ -166,8 +232,12 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "upgrade_applied_advancement"
+      "registry_name": "upgrade_applied_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/advancements/upgrade_applied_advancement.json"
+        ]
+      }
     },
     {
       "name": "IronStrengthUpgradeRecipe",
@@ -175,8 +245,12 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_strength_upgrade_recipe"
+      "registry_name": "iron_strength_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/iron_strength_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "IronJumpBoostUpgradeRecipe",
@@ -184,8 +258,12 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "iron_jump_boost_upgrade_recipe"
+      "registry_name": "iron_jump_boost_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/iron_jump_boost_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "DiamondCase",
@@ -193,8 +271,13 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_case"
+      "registry_name": "diamond_case",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/diamond_case.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/DiamondCaseItem.java"
+        ]
+      }
     },
     {
       "name": "DiamondCaseRecipe",
@@ -202,8 +285,12 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_case_recipe"
+      "registry_name": "diamond_case_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/diamond_case_recipe.json"
+        ]
+      }
     },
     {
       "name": "DiamondHealthUpgrade",
@@ -211,8 +298,13 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_health_upgrade"
+      "registry_name": "diamond_health_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/diamond_health_upgrade.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/DiamondHealthUpgradeItem.java"
+        ]
+      }
     },
     {
       "name": "DiamondHealthUpgradeRecipe",
@@ -220,8 +312,12 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_health_upgrade_recipe"
+      "registry_name": "diamond_health_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/diamond_health_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "PlayerUpgraderRecipe",
@@ -229,8 +325,12 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "player_upgrader_recipe"
+      "registry_name": "player_upgrader_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/player_upgrader_recipe.json"
+        ]
+      }
     },
     {
       "name": "DiamondSpeedUpgrade",
@@ -238,8 +338,13 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_speed_upgrade"
+      "registry_name": "diamond_speed_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/DiamondSpeedUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/diamond_speed_upgrade.json"
+        ]
+      }
     },
     {
       "name": "DiamondHasteUpgrade",
@@ -247,8 +352,13 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_haste_upgrade"
+      "registry_name": "diamond_haste_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/DiamondHasteUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/diamond_haste_upgrade.json"
+        ]
+      }
     },
     {
       "name": "DiamondStrengthUpgrade",
@@ -256,8 +366,13 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_strength_upgrade"
+      "registry_name": "diamond_strength_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/DiamondStrengthUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/diamond_strength_upgrade.json"
+        ]
+      }
     },
     {
       "name": "DiamondJumpBoostUpgrade",
@@ -265,8 +380,13 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_jump_boost_upgrade"
+      "registry_name": "diamond_jump_boost_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/diamond_jump_boost_upgrade.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/DiamondJumpBoostUpgradeItem.java"
+        ]
+      }
     },
     {
       "name": "DiamondUpgradeApplyAdvancement",
@@ -274,8 +394,12 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_upgrade_apply_advancement"
+      "registry_name": "diamond_upgrade_apply_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/advancements/diamond_upgrade_apply_advancement.json"
+        ]
+      }
     },
     {
       "name": "DiamondSpeedUpgradeRecipe",
@@ -283,8 +407,12 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_speed_upgrade_recipe"
+      "registry_name": "diamond_speed_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/diamond_speed_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "DiamondHasteUpgradeRecipe",
@@ -292,8 +420,12 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_haste_upgrade_recipe"
+      "registry_name": "diamond_haste_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/diamond_haste_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "DiamondJumpBoostUpgradeRecipe",
@@ -301,8 +433,12 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "diamond_jump_boost_upgrade_recipe"
+      "registry_name": "diamond_jump_boost_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/diamond_jump_boost_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "NetherCase",
@@ -310,8 +446,13 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_case"
+      "registry_name": "nether_case",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/nether_case.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/NetherCaseItem.java"
+        ]
+      }
     },
     {
       "name": "NetherUpgradeCaseRecipe",
@@ -319,8 +460,12 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_upgrade_case_recipe"
+      "registry_name": "nether_upgrade_case_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/nether_upgrade_case_recipe.json"
+        ]
+      }
     },
     {
       "name": "FlyUpgrade",
@@ -328,8 +473,13 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "fly_upgrade"
+      "registry_name": "fly_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/fly_upgrade.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/FlyUpgradeItem.java"
+        ]
+      }
     },
     {
       "name": "FlyUpgradeRecipe",
@@ -337,8 +487,12 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "fly_upgrade_recipe"
+      "registry_name": "fly_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/fly_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "FireResistanceUpgrade",
@@ -346,8 +500,13 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "fire_resistance_upgrade"
+      "registry_name": "fire_resistance_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/playerupgrades/models/item/fire_resistance_upgrade.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/FireResistanceUpgradeItem.java"
+        ]
+      }
     },
     {
       "name": "FireResistanceUpgradeRecipe",
@@ -355,8 +514,12 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "fire_resistance_upgrade_recipe"
+      "registry_name": "fire_resistance_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/fire_resistance_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "WaterBreathingUpgrade",
@@ -364,8 +527,13 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "water_breathing_upgrade"
+      "registry_name": "water_breathing_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/WaterBreathingUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/water_breathing_upgrade.json"
+        ]
+      }
     },
     {
       "name": "WaterBreathingUpgradeRecipe",
@@ -373,8 +541,12 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "water_breathing_upgrade_recipe"
+      "registry_name": "water_breathing_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/water_breathing_upgrade_recipe.json"
+        ]
+      }
     },
     {
       "name": "FlyApply",
@@ -382,8 +554,12 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "fly_apply"
+      "registry_name": "fly_apply",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/advancements/fly_apply.json"
+        ]
+      }
     },
     {
       "name": "FireResistanceApply",
@@ -391,8 +567,12 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "fire_resistance_apply"
+      "registry_name": "fire_resistance_apply",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/advancements/fire_resistance_apply.json"
+        ]
+      }
     },
     {
       "name": "WaterBreathingApply",
@@ -400,8 +580,12 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "water_breathing_apply"
+      "registry_name": "water_breathing_apply",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/advancements/water_breathing_apply.json"
+        ]
+      }
     },
     {
       "name": "StarryIngot",
@@ -409,8 +593,13 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "starry_ingot"
+      "registry_name": "starry_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/ca/modmonster/playerupgrades/item/StarryIngotItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/starry_ingot.json"
+        ]
+      }
     },
     {
       "name": "StarryIngotRecipe",
@@ -418,8 +607,12 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "starry_ingot_recipe"
+      "registry_name": "starry_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playerupgrades/recipes/starry_ingot_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -469,6 +662,7 @@
       "advancements.player_upgrade_craft_advancement.title": "Player Upgrades",
       "advancements.fly_apply.title": "I Believe I Can Fly!",
       "item.playerupgrades.diamond_case": "Improved Upgrade Case",
+      "gui.playerupgrades.player_upgrader_gui.label_player_upgrader": "Player Upgrader",
       "advancements.fly_apply.descr": "Craft and apply a Flying Upgrade.",
       "item.playerupgrades.iron_jump_boost_upgrade": "Basic Jumping Upgrade",
       "item.playerupgrades.diamond_speed_upgrade": "Improved Speed Upgrade",
@@ -509,10 +703,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.16.5",
+    "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "ca.modmonster.playerupgrades",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100236710
+  "mcreatorVersion": 202300110610
 }

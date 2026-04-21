@@ -11,6 +11,7 @@
   "advancements.player_upgrade_craft_advancement.title": "Player Upgrades",
   "advancements.fly_apply.title": "I Believe I Can Fly!",
   "item.playerupgrades.diamond_case": "Improved Upgrade Case",
+  "gui.playerupgrades.player_upgrader_gui.label_player_upgrader": "Player Upgrader",
   "advancements.fly_apply.descr": "Craft and apply a Flying Upgrade.",
   "item.playerupgrades.iron_jump_boost_upgrade": "Basic Jumping Upgrade",
   "item.playerupgrades.diamond_speed_upgrade": "Improved Speed Upgrade",

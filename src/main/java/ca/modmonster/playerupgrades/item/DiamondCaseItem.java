@@ -1,47 +1,20 @@
 
 package ca.modmonster.playerupgrades.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
+import ca.modmonster.playerupgrades.init.PlayerupgradesModTabs;
 
-import ca.modmonster.playerupgrades.itemgroup.PlayerUpgradesTabItemGroup;
-import ca.modmonster.playerupgrades.PlayerupgradesModElements;
-
-@PlayerupgradesModElements.ModElement.Tag
-public class DiamondCaseItem extends PlayerupgradesModElements.ModElement {
-	@ObjectHolder("playerupgrades:diamond_case")
-	public static final Item block = null;
-	public DiamondCaseItem(PlayerupgradesModElements instance) {
-		super(instance, 8);
+public class DiamondCaseItem extends Item {
+	public DiamondCaseItem() {
+		super(new Item.Properties().tab(PlayerupgradesModTabs.TAB_PLAYER_UPGRADES_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new ItemCustom());
-	}
-	public static class ItemCustom extends Item {
-		public ItemCustom() {
-			super(new Item.Properties().group(PlayerUpgradesTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("diamond_case");
-		}
-
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
-
-		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 0;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
-		}
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 }

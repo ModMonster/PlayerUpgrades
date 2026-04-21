@@ -1,55 +1,29 @@
 
 package ca.modmonster.playerupgrades.item;
 
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import ca.modmonster.playerupgrades.itemgroup.PlayerUpgradesTabItemGroup;
-import ca.modmonster.playerupgrades.PlayerupgradesModElements;
+import ca.modmonster.playerupgrades.init.PlayerupgradesModTabs;
 
-@PlayerupgradesModElements.ModElement.Tag
-public class StarryIngotItem extends PlayerupgradesModElements.ModElement {
-	@ObjectHolder("playerupgrades:starry_ingot")
-	public static final Item block = null;
-	public StarryIngotItem(PlayerupgradesModElements instance) {
-		super(instance, 18);
+public class StarryIngotItem extends Item {
+	public StarryIngotItem() {
+		super(new Item.Properties().tab(PlayerupgradesModTabs.TAB_PLAYER_UPGRADES_TAB).stacksTo(64).rarity(Rarity.RARE));
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new ItemCustom());
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
-	public static class ItemCustom extends Item {
-		public ItemCustom() {
-			super(new Item.Properties().group(PlayerUpgradesTabItemGroup.tab).maxStackSize(64).rarity(Rarity.RARE));
-			setRegistryName("starry_ingot");
-		}
 
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
-
-		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 0;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
-		}
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 }

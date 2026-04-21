@@ -21,7 +21,9 @@
       "conditions": {
         "items": [
           {
-            "item": "playerupgrades:player_upgrader",
+            "items": [
+              "playerupgrades:player_upgrader"
+            ],
             "count": {
               "min": 1,
               "max": 64
