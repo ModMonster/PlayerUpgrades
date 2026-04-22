@@ -21,7 +21,7 @@
     }
   },
   "result": {
-    "item": "playerupgrades:iron_jump_boost_upgrade",
+    "id": "playerupgrades:iron_jump_boost_upgrade",
     "count": 1
   }
 }

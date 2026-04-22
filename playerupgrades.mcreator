@@ -8,12 +8,12 @@
       "registry_name": "player_upgrader",
       "metadata": {
         "files": [
-          "src/main/java/ca/modmonster/playerupgrades/block/PlayerUpgraderBlock.java",
-          "src/main/resources/assets/playerupgrades/models/block/player_upgrader.json",
-          "src/main/resources/data/playerupgrades/loot_tables/blocks/player_upgrader.json",
-          "src/main/resources/assets/playerupgrades/models/item/player_upgrader.json",
           "src/main/java/ca/modmonster/playerupgrades/block/entity/PlayerUpgraderBlockEntity.java",
-          "src/main/resources/assets/playerupgrades/blockstates/player_upgrader.json"
+          "src/main/resources/assets/playerupgrades/models/block/player_upgrader.json",
+          "src/main/resources/assets/playerupgrades/models/item/player_upgrader.json",
+          "src/main/java/ca/modmonster/playerupgrades/block/PlayerUpgraderBlock.java",
+          "src/main/resources/assets/playerupgrades/blockstates/player_upgrader.json",
+          "src/main/resources/data/playerupgrades/loot_table/blocks/player_upgrader.json"
         ]
       }
     },
@@ -48,8 +48,8 @@
       "registry_name": "iron_health_upgrade",
       "metadata": {
         "files": [
-          "src/main/java/ca/modmonster/playerupgrades/item/IronHealthUpgradeItem.java",
-          "src/main/resources/assets/playerupgrades/models/item/iron_health_upgrade.json"
+          "src/main/resources/assets/playerupgrades/models/item/iron_health_upgrade.json",
+          "src/main/java/ca/modmonster/playerupgrades/item/IronHealthUpgradeItem.java"
         ]
       }
     },
@@ -74,7 +74,7 @@
       "registry_name": "iron_case_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/iron_case_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/iron_case_recipe.json"
         ]
       }
     },
@@ -86,7 +86,7 @@
       "registry_name": "iron_health_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/iron_health_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/iron_health_upgrade_recipe.json"
         ]
       }
     },
@@ -145,7 +145,7 @@
       "registry_name": "iron_speed_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/iron_speed_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/iron_speed_upgrade_recipe.json"
         ]
       }
     },
@@ -170,7 +170,7 @@
       "registry_name": "iron_haste_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/iron_haste_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/iron_haste_upgrade_recipe.json"
         ]
       }
     },
@@ -208,7 +208,7 @@
       "registry_name": "player_upgrade_craft_advancement",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/advancements/player_upgrade_craft_advancement.json"
+          "src/main/resources/data/playerupgrades/advancement/player_upgrade_craft_advancement.json"
         ]
       }
     },
@@ -220,7 +220,7 @@
       "registry_name": "upgrade_applied_advancement",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/advancements/upgrade_applied_advancement.json"
+          "src/main/resources/data/playerupgrades/advancement/upgrade_applied_advancement.json"
         ]
       }
     },
@@ -232,7 +232,7 @@
       "registry_name": "iron_strength_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/iron_strength_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/iron_strength_upgrade_recipe.json"
         ]
       }
     },
@@ -244,7 +244,7 @@
       "registry_name": "iron_jump_boost_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/iron_jump_boost_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/iron_jump_boost_upgrade_recipe.json"
         ]
       }
     },
@@ -256,8 +256,8 @@
       "registry_name": "diamond_case",
       "metadata": {
         "files": [
-          "src/main/resources/assets/playerupgrades/models/item/diamond_case.json",
-          "src/main/java/ca/modmonster/playerupgrades/item/DiamondCaseItem.java"
+          "src/main/java/ca/modmonster/playerupgrades/item/DiamondCaseItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/diamond_case.json"
         ]
       }
     },
@@ -269,7 +269,7 @@
       "registry_name": "diamond_case_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/diamond_case_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/diamond_case_recipe.json"
         ]
       }
     },
@@ -294,7 +294,7 @@
       "registry_name": "diamond_health_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/diamond_health_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/diamond_health_upgrade_recipe.json"
         ]
       }
     },
@@ -306,7 +306,7 @@
       "registry_name": "player_upgrader_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/player_upgrader_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/player_upgrader_recipe.json"
         ]
       }
     },
@@ -370,7 +370,7 @@
       "registry_name": "diamond_upgrade_apply_advancement",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/advancements/diamond_upgrade_apply_advancement.json"
+          "src/main/resources/data/playerupgrades/advancement/diamond_upgrade_apply_advancement.json"
         ]
       }
     },
@@ -382,7 +382,7 @@
       "registry_name": "diamond_speed_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/diamond_speed_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/diamond_speed_upgrade_recipe.json"
         ]
       }
     },
@@ -394,7 +394,7 @@
       "registry_name": "diamond_haste_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/diamond_haste_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/diamond_haste_upgrade_recipe.json"
         ]
       }
     },
@@ -406,7 +406,7 @@
       "registry_name": "diamond_jump_boost_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/diamond_jump_boost_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/diamond_jump_boost_upgrade_recipe.json"
         ]
       }
     },
@@ -418,8 +418,8 @@
       "registry_name": "nether_case",
       "metadata": {
         "files": [
-          "src/main/resources/assets/playerupgrades/models/item/nether_case.json",
-          "src/main/java/ca/modmonster/playerupgrades/item/NetherCaseItem.java"
+          "src/main/java/ca/modmonster/playerupgrades/item/NetherCaseItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/nether_case.json"
         ]
       }
     },
@@ -431,7 +431,7 @@
       "registry_name": "nether_upgrade_case_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/nether_upgrade_case_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/nether_upgrade_case_recipe.json"
         ]
       }
     },
@@ -443,8 +443,8 @@
       "registry_name": "fly_upgrade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/playerupgrades/models/item/fly_upgrade.json",
-          "src/main/java/ca/modmonster/playerupgrades/item/FlyUpgradeItem.java"
+          "src/main/java/ca/modmonster/playerupgrades/item/FlyUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/fly_upgrade.json"
         ]
       }
     },
@@ -456,7 +456,7 @@
       "registry_name": "fly_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/fly_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/fly_upgrade_recipe.json"
         ]
       }
     },
@@ -468,8 +468,8 @@
       "registry_name": "fire_resistance_upgrade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/playerupgrades/models/item/fire_resistance_upgrade.json",
-          "src/main/java/ca/modmonster/playerupgrades/item/FireResistanceUpgradeItem.java"
+          "src/main/java/ca/modmonster/playerupgrades/item/FireResistanceUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/models/item/fire_resistance_upgrade.json"
         ]
       }
     },
@@ -481,7 +481,7 @@
       "registry_name": "fire_resistance_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/fire_resistance_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/fire_resistance_upgrade_recipe.json"
         ]
       }
     },
@@ -506,7 +506,7 @@
       "registry_name": "water_breathing_upgrade_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/water_breathing_upgrade_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/water_breathing_upgrade_recipe.json"
         ]
       }
     },
@@ -518,7 +518,7 @@
       "registry_name": "fly_apply",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/advancements/fly_apply.json"
+          "src/main/resources/data/playerupgrades/advancement/fly_apply.json"
         ]
       }
     },
@@ -530,7 +530,7 @@
       "registry_name": "fire_resistance_apply",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/advancements/fire_resistance_apply.json"
+          "src/main/resources/data/playerupgrades/advancement/fire_resistance_apply.json"
         ]
       }
     },
@@ -542,7 +542,7 @@
       "registry_name": "water_breathing_apply",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/advancements/water_breathing_apply.json"
+          "src/main/resources/data/playerupgrades/advancement/water_breathing_apply.json"
         ]
       }
     },
@@ -567,7 +567,7 @@
       "registry_name": "starry_ingot_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/playerupgrades/recipes/starry_ingot_recipe.json"
+          "src/main/resources/data/playerupgrades/recipe/starry_ingot_recipe.json"
         ]
       }
     }
@@ -655,6 +655,21 @@
       "item.playerupgrades.starry_ingot": "Starry Ingot"
     }
   },
+  "metadata": {
+    "files": [
+      "src/main/java/ca/modmonster/playerupgrades/init/PlayerupgradesModScreens.java",
+      "src/main/java/ca/modmonster/playerupgrades/network/MenuStateUpdateMessage.java",
+      "src/main/java/ca/modmonster/playerupgrades/init/PlayerupgradesModMenus.java",
+      "src/main/java/ca/modmonster/playerupgrades/init/PlayerupgradesModBlocks.java",
+      "src/main/java/ca/modmonster/playerupgrades/init/PlayerupgradesModBlockEntities.java",
+      "src/main/java/ca/modmonster/playerupgrades/init/PlayerupgradesModItems.java",
+      "src/main/java/ca/modmonster/playerupgrades/PlayerupgradesMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/ca/modmonster/playerupgrades/network/PlayerupgradesModVariables.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/ca/modmonster/playerupgrades/init/PlayerupgradesModTabs.java"
+    ]
+  },
   "foldersRoot": {
     "name": "~",
     "children": []
@@ -673,9 +688,9 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "ca.modmonster.playerupgrades"
   },
-  "mcreatorVersion": 202400452410
+  "mcreatorVersion": 202600114619
 }

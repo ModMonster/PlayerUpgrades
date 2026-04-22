@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "playerupgrades:starry_ingot",
+    "id": "playerupgrades:starry_ingot",
     "count": 4
   }
 }

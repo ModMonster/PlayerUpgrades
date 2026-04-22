@@ -8,20 +8,20 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:redstone_block"
+      "item": "minecraft:iron_sword"
     },
     "b": {
-      "item": "minecraft:golden_apple"
+      "item": "minecraft:redstone"
     },
     "c": {
-      "item": "playerupgrades:iron_health_upgrade"
+      "item": "minecraft:diamond"
     },
     "d": {
-      "item": "playerupgrades:diamond_case"
+      "item": "playerupgrades:iron_case"
     }
   },
   "result": {
-    "item": "playerupgrades:diamond_health_upgrade",
+    "id": "playerupgrades:iron_strength_upgrade",
     "count": 1
   }
 }

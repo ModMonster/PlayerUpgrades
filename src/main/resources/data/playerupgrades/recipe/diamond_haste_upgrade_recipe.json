@@ -11,17 +11,17 @@
       "item": "minecraft:redstone_block"
     },
     "b": {
-      "item": "minecraft:rabbit_foot"
+      "item": "minecraft:iron_pickaxe"
     },
     "c": {
-      "item": "playerupgrades:iron_jump_boost_upgrade"
+      "item": "playerupgrades:iron_haste_upgrade"
     },
     "d": {
       "item": "playerupgrades:diamond_case"
     }
   },
   "result": {
-    "item": "playerupgrades:diamond_jump_boost_upgrade",
+    "id": "playerupgrades:diamond_haste_upgrade",
     "count": 1
   }
 }

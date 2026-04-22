@@ -8,20 +8,20 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_sword"
+      "item": "minecraft:redstone_block"
     },
     "b": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:rabbit_foot"
     },
     "c": {
-      "item": "minecraft:diamond"
+      "item": "playerupgrades:iron_jump_boost_upgrade"
     },
     "d": {
-      "item": "playerupgrades:iron_case"
+      "item": "playerupgrades:diamond_case"
     }
   },
   "result": {
-    "item": "playerupgrades:iron_strength_upgrade",
+    "id": "playerupgrades:diamond_jump_boost_upgrade",
     "count": 1
   }
 }

@@ -4,24 +4,24 @@
   "pattern": [
     "aba",
     "cdc",
-    "aba"
+    "aca"
   ],
   "key": {
     "a": {
-      "item": "minecraft:golden_apple"
-    },
-    "b": {
       "item": "minecraft:redstone"
     },
+    "b": {
+      "item": "minecraft:elytra"
+    },
     "c": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:dragon_breath"
     },
     "d": {
-      "item": "playerupgrades:iron_case"
+      "item": "playerupgrades:nether_case"
     }
   },
   "result": {
-    "item": "playerupgrades:iron_health_upgrade",
+    "id": "playerupgrades:fly_upgrade",
     "count": 1
   }
 }

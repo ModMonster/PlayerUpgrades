@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:sugar"
+      "item": "minecraft:iron_pickaxe"
     },
     "b": {
       "item": "minecraft:redstone"
@@ -21,7 +21,7 @@
     }
   },
   "result": {
-    "item": "playerupgrades:iron_speed_upgrade",
+    "id": "playerupgrades:iron_haste_upgrade",
     "count": 1
   }
 }

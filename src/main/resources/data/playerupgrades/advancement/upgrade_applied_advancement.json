@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "playerupgrades:iron_case"
+      "id": "playerupgrades:iron_case"
     },
     "title": {
       "translate": "advancements.upgrade_applied_advancement.title"

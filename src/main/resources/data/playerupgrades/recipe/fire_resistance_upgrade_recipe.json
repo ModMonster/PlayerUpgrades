@@ -11,7 +11,7 @@
       "item": "minecraft:redstone"
     },
     "b": {
-      "item": "minecraft:elytra"
+      "item": "minecraft:lava_bucket"
     },
     "c": {
       "item": "minecraft:dragon_breath"
@@ -21,7 +21,7 @@
     }
   },
   "result": {
-    "item": "playerupgrades:fly_upgrade",
+    "id": "playerupgrades:fire_resistance_upgrade",
     "count": 1
   }
 }

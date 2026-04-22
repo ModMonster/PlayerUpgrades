@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "playerupgrades:water_breathing_upgrade"
+      "id": "playerupgrades:diamond_case"
     },
     "title": {
-      "translate": "advancements.water_breathing_apply.title"
+      "translate": "advancements.diamond_upgrade_apply_advancement.title"
     },
     "description": {
-      "translate": "advancements.water_breathing_apply.descr"
+      "translate": "advancements.diamond_upgrade_apply_advancement.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,12 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "water_breathing_apply_0": {
+    "diamond_upgrade_apply_advancement_0": {
       "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
     "experience": 1
   },
-  "parent": "playerupgrades:player_upgrade_craft_advancement"
+  "parent": "playerupgrades:upgrade_applied_advancement"
 }

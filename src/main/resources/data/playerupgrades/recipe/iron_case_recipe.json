@@ -8,11 +8,11 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {
-    "item": "playerupgrades:diamond_case",
+    "id": "playerupgrades:iron_case",
     "count": 1
   }
 }

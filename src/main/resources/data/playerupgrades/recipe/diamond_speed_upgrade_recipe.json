@@ -11,17 +11,17 @@
       "item": "minecraft:redstone_block"
     },
     "b": {
-      "item": "minecraft:iron_pickaxe"
+      "item": "minecraft:sugar"
     },
     "c": {
-      "item": "playerupgrades:iron_haste_upgrade"
+      "item": "playerupgrades:iron_speed_upgrade"
     },
     "d": {
       "item": "playerupgrades:diamond_case"
     }
   },
   "result": {
-    "item": "playerupgrades:diamond_haste_upgrade",
+    "id": "playerupgrades:diamond_speed_upgrade",
     "count": 1
   }
 }

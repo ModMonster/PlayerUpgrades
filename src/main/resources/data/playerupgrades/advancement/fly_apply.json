@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "playerupgrades:fire_resistance_upgrade"
+      "id": "playerupgrades:fly_upgrade"
     },
     "title": {
-      "translate": "advancements.fire_resistance_apply.title"
+      "translate": "advancements.fly_apply.title"
     },
     "description": {
-      "translate": "advancements.fire_resistance_apply.descr"
+      "translate": "advancements.fly_apply.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "fire_resistance_apply_0": {
+    "fly_apply_0": {
       "trigger": "minecraft:impossible"
     }
   },

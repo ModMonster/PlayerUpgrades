@@ -3,25 +3,22 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cdc",
-    "aca"
+    "bcb",
+    "aba"
   ],
   "key": {
     "a": {
       "item": "minecraft:redstone"
     },
     "b": {
-      "item": "minecraft:lava_bucket"
+      "item": "minecraft:smooth_quartz"
     },
     "c": {
-      "item": "minecraft:dragon_breath"
-    },
-    "d": {
-      "item": "playerupgrades:nether_case"
+      "item": "minecraft:diamond_block"
     }
   },
   "result": {
-    "item": "playerupgrades:fire_resistance_upgrade",
+    "id": "playerupgrades:player_upgrader",
     "count": 1
   }
 }

@@ -3,22 +3,25 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "bcb",
-    "aba"
+    "cdc",
+    "aca"
   ],
   "key": {
     "a": {
       "item": "minecraft:redstone"
     },
     "b": {
-      "item": "minecraft:smooth_quartz"
+      "item": "minecraft:pufferfish"
     },
     "c": {
-      "item": "minecraft:diamond_block"
+      "item": "minecraft:dragon_breath"
+    },
+    "d": {
+      "item": "playerupgrades:nether_case"
     }
   },
   "result": {
-    "item": "playerupgrades:player_upgrader",
+    "id": "playerupgrades:water_breathing_upgrade",
     "count": 1
   }
 }

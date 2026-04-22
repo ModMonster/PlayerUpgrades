@@ -4,24 +4,24 @@
   "pattern": [
     "aba",
     "cdc",
-    "aca"
+    "aba"
   ],
   "key": {
     "a": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:sugar"
     },
     "b": {
-      "item": "minecraft:pufferfish"
+      "item": "minecraft:redstone"
     },
     "c": {
-      "item": "minecraft:dragon_breath"
+      "item": "minecraft:diamond"
     },
     "d": {
-      "item": "playerupgrades:nether_case"
+      "item": "playerupgrades:iron_case"
     }
   },
   "result": {
-    "item": "playerupgrades:water_breathing_upgrade",
+    "id": "playerupgrades:iron_speed_upgrade",
     "count": 1
   }
 }

@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "playerupgrades:player_upgrader"
+      "id": "playerupgrades:player_upgrader"
     },
     "title": {
       "translate": "advancements.player_upgrade_craft_advancement.title"
@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "playerupgrades:player_upgrader"
-            ],
+            "items": "playerupgrades:player_upgrader",
             "count": {
               "min": 1,
               "max": 64
