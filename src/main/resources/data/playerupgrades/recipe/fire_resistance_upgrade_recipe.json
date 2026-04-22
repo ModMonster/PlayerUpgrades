@@ -7,18 +7,10 @@
     "aca"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:redstone"
-    },
-    "b": {
-      "item": "minecraft:lava_bucket"
-    },
-    "c": {
-      "item": "minecraft:dragon_breath"
-    },
-    "d": {
-      "item": "playerupgrades:nether_case"
-    }
+    "a": "minecraft:redstone",
+    "b": "minecraft:lava_bucket",
+    "c": "minecraft:dragon_breath",
+    "d": "playerupgrades:nether_case"
   },
   "result": {
     "id": "playerupgrades:fire_resistance_upgrade",

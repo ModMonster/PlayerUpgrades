@@ -35,5 +35,6 @@
   "item.playerupgrades.diamond_haste_upgrade": "Improved Mining Upgrade",
   "item.playerupgrades.nether_case": "Nether Upgrade Case",
   "item.playerupgrades.iron_strength_upgrade": "Basic Strength Upgrade",
-  "item.playerupgrades.starry_ingot": "Starry Ingot"
+  "item.playerupgrades.starry_ingot": "Starry Ingot",
+  "item.playerupgrades.player_upgrader": "Upgrader"
 }

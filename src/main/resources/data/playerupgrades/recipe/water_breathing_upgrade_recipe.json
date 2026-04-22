@@ -7,18 +7,10 @@
     "aca"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:redstone"
-    },
-    "b": {
-      "item": "minecraft:pufferfish"
-    },
-    "c": {
-      "item": "minecraft:dragon_breath"
-    },
-    "d": {
-      "item": "playerupgrades:nether_case"
-    }
+    "a": "minecraft:redstone",
+    "b": "minecraft:pufferfish",
+    "c": "minecraft:dragon_breath",
+    "d": "playerupgrades:nether_case"
   },
   "result": {
     "id": "playerupgrades:water_breathing_upgrade",

@@ -7,18 +7,10 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:golden_apple"
-    },
-    "b": {
-      "item": "minecraft:redstone"
-    },
-    "c": {
-      "item": "minecraft:diamond"
-    },
-    "d": {
-      "item": "playerupgrades:iron_case"
-    }
+    "a": "minecraft:golden_apple",
+    "b": "minecraft:redstone",
+    "c": "minecraft:diamond",
+    "d": "playerupgrades:iron_case"
   },
   "result": {
     "id": "playerupgrades:iron_health_upgrade",

@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "playerupgrades:starry_ingot"
-    }
+    "a": "playerupgrades:starry_ingot"
   },
   "result": {
     "id": "playerupgrades:nether_case",

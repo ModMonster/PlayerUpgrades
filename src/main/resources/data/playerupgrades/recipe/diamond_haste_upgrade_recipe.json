@@ -7,18 +7,10 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:redstone_block"
-    },
-    "b": {
-      "item": "minecraft:iron_pickaxe"
-    },
-    "c": {
-      "item": "playerupgrades:iron_haste_upgrade"
-    },
-    "d": {
-      "item": "playerupgrades:diamond_case"
-    }
+    "a": "minecraft:redstone_block",
+    "b": "minecraft:iron_pickaxe",
+    "c": "playerupgrades:iron_haste_upgrade",
+    "d": "playerupgrades:diamond_case"
   },
   "result": {
     "id": "playerupgrades:diamond_haste_upgrade",

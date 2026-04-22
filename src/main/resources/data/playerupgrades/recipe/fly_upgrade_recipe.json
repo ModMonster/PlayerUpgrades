@@ -7,18 +7,10 @@
     "aca"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:redstone"
-    },
-    "b": {
-      "item": "minecraft:elytra"
-    },
-    "c": {
-      "item": "minecraft:dragon_breath"
-    },
-    "d": {
-      "item": "playerupgrades:nether_case"
-    }
+    "a": "minecraft:redstone",
+    "b": "minecraft:elytra",
+    "c": "minecraft:dragon_breath",
+    "d": "playerupgrades:nether_case"
   },
   "result": {
     "id": "playerupgrades:fly_upgrade",

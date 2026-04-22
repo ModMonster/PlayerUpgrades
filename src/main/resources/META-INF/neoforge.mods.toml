@@ -22,14 +22,14 @@ description="A mod that adds upgrades to enhance your player!"
 [[dependencies.playerupgrades]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.190,)"
+    versionRange="[21.8.31,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.playerupgrades]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.1]"
+    versionRange="[1.21.8]"
     ordering="AFTER"
     side="BOTH"
 

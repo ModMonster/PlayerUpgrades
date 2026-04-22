@@ -11,6 +11,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.level.saveddata.SavedDataType;
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
@@ -75,19 +76,16 @@ public class PlayerupgradesModVariables {
 	}
 
 	public static class WorldVariables extends SavedData {
-		public static final String DATA_NAME = "playerupgrades_worldvars";
+		public static final SavedDataType<WorldVariables> TYPE = new SavedDataType<>("playerupgrades_worldvars", ctx -> new WorldVariables(), ctx -> CompoundTag.CODEC.xmap(tag -> {
+			WorldVariables instance = new WorldVariables();
+			instance.read(tag, ctx.levelOrThrow().registryAccess());
+			return instance;
+		}, instance -> instance.save(new CompoundTag(), ctx.levelOrThrow().registryAccess())));
 		boolean _syncDirty = false;
-
-		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
-			WorldVariables data = new WorldVariables();
-			data.read(tag, lookupProvider);
-			return data;
-		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 		}
 
-		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			return nbt;
 		}
@@ -101,7 +99,7 @@ public class PlayerupgradesModVariables {
 
 		public static WorldVariables get(LevelAccessor world) {
 			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(new SavedData.Factory<>(WorldVariables::new, WorldVariables::load), DATA_NAME);
+				return level.getDataStorage().computeIfAbsent(WorldVariables.TYPE);
 			} else {
 				return clientSide;
 			}
@@ -109,7 +107,11 @@ public class PlayerupgradesModVariables {
 	}
 
 	public static class MapVariables extends SavedData {
-		public static final String DATA_NAME = "playerupgrades_mapvars";
+		public static final SavedDataType<MapVariables> TYPE = new SavedDataType<>("playerupgrades_mapvars", ctx -> new MapVariables(), ctx -> CompoundTag.CODEC.xmap(tag -> {
+			MapVariables instance = new MapVariables();
+			instance.read(tag, ctx.levelOrThrow().registryAccess());
+			return instance;
+		}, instance -> instance.save(new CompoundTag(), ctx.levelOrThrow().registryAccess())));
 		boolean _syncDirty = false;
 		public double healthCount = 0;
 		public double speedCount = 0;
@@ -117,21 +119,14 @@ public class PlayerupgradesModVariables {
 		public double strengthCount = 0;
 		public double jumpBoostCount = 0;
 
-		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
-			MapVariables data = new MapVariables();
-			data.read(tag, lookupProvider);
-			return data;
-		}
-
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			healthCount = nbt.getDouble("healthCount");
-			speedCount = nbt.getDouble("speedCount");
-			hasteCount = nbt.getDouble("hasteCount");
-			strengthCount = nbt.getDouble("strengthCount");
-			jumpBoostCount = nbt.getDouble("jumpBoostCount");
+			healthCount = nbt.getDoubleOr("healthCount", 0);
+			speedCount = nbt.getDoubleOr("speedCount", 0);
+			hasteCount = nbt.getDoubleOr("hasteCount", 0);
+			strengthCount = nbt.getDoubleOr("strengthCount", 0);
+			jumpBoostCount = nbt.getDoubleOr("jumpBoostCount", 0);
 		}
 
-		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("healthCount", healthCount);
 			nbt.putDouble("speedCount", speedCount);
@@ -143,14 +138,14 @@ public class PlayerupgradesModVariables {
 
 		public void markSyncDirty() {
 			this.setDirty();
-			_syncDirty = true;
+			this._syncDirty = true;
 		}
 
 		static MapVariables clientSide = new MapVariables();
 
 		public static MapVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(new SavedData.Factory<>(MapVariables::new, MapVariables::load), DATA_NAME);
+			if (world instanceof ServerLevelAccessor serverLevelAccessor) {
+				return serverLevelAccessor.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(MapVariables.TYPE);
 			} else {
 				return clientSide;
 			}
@@ -161,8 +156,10 @@ public class PlayerupgradesModVariables {
 		public static final Type<SavedDataSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PlayerupgradesMod.MODID, "saved_data_sync"));
 		public static final StreamCodec<RegistryFriendlyByteBuf, SavedDataSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SavedDataSyncMessage message) -> {
 			buffer.writeInt(message.dataType);
-			if (message.data != null)
-				buffer.writeNbt(message.data.save(new CompoundTag(), buffer.registryAccess()));
+			if (message.data instanceof MapVariables mapVariables)
+				buffer.writeNbt(mapVariables.save(new CompoundTag(), buffer.registryAccess()));
+			else if (message.data instanceof WorldVariables worldVariables)
+				buffer.writeNbt(worldVariables.save(new CompoundTag(), buffer.registryAccess()));
 		}, (RegistryFriendlyByteBuf buffer) -> {
 			int dataType = buffer.readInt();
 			CompoundTag nbt = buffer.readNbt();
@@ -186,9 +183,9 @@ public class PlayerupgradesModVariables {
 			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
 				context.enqueueWork(() -> {
 					if (message.dataType == 0)
-						MapVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+						MapVariables.clientSide.read(((MapVariables) message.data).save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
 					else
-						WorldVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+						WorldVariables.clientSide.read(((WorldVariables) message.data).save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;

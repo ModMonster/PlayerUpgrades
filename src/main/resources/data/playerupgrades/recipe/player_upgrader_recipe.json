@@ -7,15 +7,9 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:redstone"
-    },
-    "b": {
-      "item": "minecraft:smooth_quartz"
-    },
-    "c": {
-      "item": "minecraft:diamond_block"
-    }
+    "a": "minecraft:redstone",
+    "b": "minecraft:smooth_quartz",
+    "c": "minecraft:diamond_block"
   },
   "result": {
     "id": "playerupgrades:player_upgrader",

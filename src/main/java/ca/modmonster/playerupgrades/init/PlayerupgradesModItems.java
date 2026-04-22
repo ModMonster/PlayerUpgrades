@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import java.util.function.Function;
+
 import ca.modmonster.playerupgrades.item.*;
 import ca.modmonster.playerupgrades.PlayerupgradesMod;
 
@@ -36,32 +38,36 @@ public class PlayerupgradesModItems {
 	public static final DeferredItem<Item> STARRY_INGOT;
 	static {
 		PLAYER_UPGRADER = block(PlayerupgradesModBlocks.PLAYER_UPGRADER);
-		IRON_HEALTH_UPGRADE = REGISTRY.register("iron_health_upgrade", IronHealthUpgradeItem::new);
-		IRON_CASE = REGISTRY.register("iron_case", IronCaseItem::new);
-		IRON_SPEED_UPGRADE = REGISTRY.register("iron_speed_upgrade", IronSpeedUpgradeItem::new);
-		IRON_HASTE_UPGRADE = REGISTRY.register("iron_haste_upgrade", IronHasteUpgradeItem::new);
-		IRON_STRENGTH_UPGRADE = REGISTRY.register("iron_strength_upgrade", IronStrengthUpgradeItem::new);
-		IRON_JUMP_BOOST_UPGRADE = REGISTRY.register("iron_jump_boost_upgrade", IronJumpBoostUpgradeItem::new);
-		DIAMOND_CASE = REGISTRY.register("diamond_case", DiamondCaseItem::new);
-		DIAMOND_HEALTH_UPGRADE = REGISTRY.register("diamond_health_upgrade", DiamondHealthUpgradeItem::new);
-		DIAMOND_SPEED_UPGRADE = REGISTRY.register("diamond_speed_upgrade", DiamondSpeedUpgradeItem::new);
-		DIAMOND_HASTE_UPGRADE = REGISTRY.register("diamond_haste_upgrade", DiamondHasteUpgradeItem::new);
-		DIAMOND_STRENGTH_UPGRADE = REGISTRY.register("diamond_strength_upgrade", DiamondStrengthUpgradeItem::new);
-		DIAMOND_JUMP_BOOST_UPGRADE = REGISTRY.register("diamond_jump_boost_upgrade", DiamondJumpBoostUpgradeItem::new);
-		NETHER_CASE = REGISTRY.register("nether_case", NetherCaseItem::new);
-		FLY_UPGRADE = REGISTRY.register("fly_upgrade", FlyUpgradeItem::new);
-		FIRE_RESISTANCE_UPGRADE = REGISTRY.register("fire_resistance_upgrade", FireResistanceUpgradeItem::new);
-		WATER_BREATHING_UPGRADE = REGISTRY.register("water_breathing_upgrade", WaterBreathingUpgradeItem::new);
-		STARRY_INGOT = REGISTRY.register("starry_ingot", StarryIngotItem::new);
+		IRON_HEALTH_UPGRADE = register("iron_health_upgrade", IronHealthUpgradeItem::new);
+		IRON_CASE = register("iron_case", IronCaseItem::new);
+		IRON_SPEED_UPGRADE = register("iron_speed_upgrade", IronSpeedUpgradeItem::new);
+		IRON_HASTE_UPGRADE = register("iron_haste_upgrade", IronHasteUpgradeItem::new);
+		IRON_STRENGTH_UPGRADE = register("iron_strength_upgrade", IronStrengthUpgradeItem::new);
+		IRON_JUMP_BOOST_UPGRADE = register("iron_jump_boost_upgrade", IronJumpBoostUpgradeItem::new);
+		DIAMOND_CASE = register("diamond_case", DiamondCaseItem::new);
+		DIAMOND_HEALTH_UPGRADE = register("diamond_health_upgrade", DiamondHealthUpgradeItem::new);
+		DIAMOND_SPEED_UPGRADE = register("diamond_speed_upgrade", DiamondSpeedUpgradeItem::new);
+		DIAMOND_HASTE_UPGRADE = register("diamond_haste_upgrade", DiamondHasteUpgradeItem::new);
+		DIAMOND_STRENGTH_UPGRADE = register("diamond_strength_upgrade", DiamondStrengthUpgradeItem::new);
+		DIAMOND_JUMP_BOOST_UPGRADE = register("diamond_jump_boost_upgrade", DiamondJumpBoostUpgradeItem::new);
+		NETHER_CASE = register("nether_case", NetherCaseItem::new);
+		FLY_UPGRADE = register("fly_upgrade", FlyUpgradeItem::new);
+		FIRE_RESISTANCE_UPGRADE = register("fire_resistance_upgrade", FireResistanceUpgradeItem::new);
+		WATER_BREATHING_UPGRADE = register("water_breathing_upgrade", WaterBreathingUpgradeItem::new);
+		STARRY_INGOT = register("starry_ingot", StarryIngotItem::new);
 	}
 
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static <I extends Item> DeferredItem<I> register(String name, Function<Item.Properties, ? extends I> supplier) {
+		return REGISTRY.registerItem(name, supplier, new Item.Properties());
+	}
+
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
 		return block(block, new Item.Properties());
 	}
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
-		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), properties));
+		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), properties);
 	}
 }

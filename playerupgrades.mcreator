@@ -13,6 +13,7 @@
           "src/main/resources/assets/playerupgrades/models/item/player_upgrader.json",
           "src/main/java/ca/modmonster/playerupgrades/block/PlayerUpgraderBlock.java",
           "src/main/resources/assets/playerupgrades/blockstates/player_upgrader.json",
+          "src/main/resources/assets/playerupgrades/items/player_upgrader.json",
           "src/main/resources/data/playerupgrades/loot_table/blocks/player_upgrader.json"
         ]
       }
@@ -48,6 +49,7 @@
       "registry_name": "iron_health_upgrade",
       "metadata": {
         "files": [
+          "src/main/resources/assets/playerupgrades/items/iron_health_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/iron_health_upgrade.json",
           "src/main/java/ca/modmonster/playerupgrades/item/IronHealthUpgradeItem.java"
         ]
@@ -62,6 +64,7 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/IronCaseItem.java",
+          "src/main/resources/assets/playerupgrades/items/iron_case.json",
           "src/main/resources/assets/playerupgrades/models/item/iron_case.json"
         ]
       }
@@ -133,6 +136,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/playerupgrades/models/item/iron_speed_upgrade.json",
+          "src/main/resources/assets/playerupgrades/items/iron_speed_upgrade.json",
           "src/main/java/ca/modmonster/playerupgrades/item/IronSpeedUpgradeItem.java"
         ]
       }
@@ -158,6 +162,7 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/IronHasteUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/items/iron_haste_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/iron_haste_upgrade.json"
         ]
       }
@@ -183,6 +188,7 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/IronStrengthUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/items/iron_strength_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/iron_strength_upgrade.json"
         ]
       }
@@ -195,6 +201,7 @@
       "registry_name": "iron_jump_boost_upgrade",
       "metadata": {
         "files": [
+          "src/main/resources/assets/playerupgrades/items/iron_jump_boost_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/iron_jump_boost_upgrade.json",
           "src/main/java/ca/modmonster/playerupgrades/item/IronJumpBoostUpgradeItem.java"
         ]
@@ -257,6 +264,7 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/DiamondCaseItem.java",
+          "src/main/resources/assets/playerupgrades/items/diamond_case.json",
           "src/main/resources/assets/playerupgrades/models/item/diamond_case.json"
         ]
       }
@@ -281,6 +289,7 @@
       "registry_name": "diamond_health_upgrade",
       "metadata": {
         "files": [
+          "src/main/resources/assets/playerupgrades/items/diamond_health_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/diamond_health_upgrade.json",
           "src/main/java/ca/modmonster/playerupgrades/item/DiamondHealthUpgradeItem.java"
         ]
@@ -319,6 +328,7 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/DiamondSpeedUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/items/diamond_speed_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/diamond_speed_upgrade.json"
         ]
       }
@@ -332,7 +342,8 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/DiamondHasteUpgradeItem.java",
-          "src/main/resources/assets/playerupgrades/models/item/diamond_haste_upgrade.json"
+          "src/main/resources/assets/playerupgrades/models/item/diamond_haste_upgrade.json",
+          "src/main/resources/assets/playerupgrades/items/diamond_haste_upgrade.json"
         ]
       }
     },
@@ -344,6 +355,7 @@
       "registry_name": "diamond_strength_upgrade",
       "metadata": {
         "files": [
+          "src/main/resources/assets/playerupgrades/items/diamond_strength_upgrade.json",
           "src/main/java/ca/modmonster/playerupgrades/item/DiamondStrengthUpgradeItem.java",
           "src/main/resources/assets/playerupgrades/models/item/diamond_strength_upgrade.json"
         ]
@@ -357,6 +369,7 @@
       "registry_name": "diamond_jump_boost_upgrade",
       "metadata": {
         "files": [
+          "src/main/resources/assets/playerupgrades/items/diamond_jump_boost_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/diamond_jump_boost_upgrade.json",
           "src/main/java/ca/modmonster/playerupgrades/item/DiamondJumpBoostUpgradeItem.java"
         ]
@@ -418,6 +431,7 @@
       "registry_name": "nether_case",
       "metadata": {
         "files": [
+          "src/main/resources/assets/playerupgrades/items/nether_case.json",
           "src/main/java/ca/modmonster/playerupgrades/item/NetherCaseItem.java",
           "src/main/resources/assets/playerupgrades/models/item/nether_case.json"
         ]
@@ -444,7 +458,8 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/FlyUpgradeItem.java",
-          "src/main/resources/assets/playerupgrades/models/item/fly_upgrade.json"
+          "src/main/resources/assets/playerupgrades/models/item/fly_upgrade.json",
+          "src/main/resources/assets/playerupgrades/items/fly_upgrade.json"
         ]
       }
     },
@@ -469,6 +484,7 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/FireResistanceUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/items/fire_resistance_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/fire_resistance_upgrade.json"
         ]
       }
@@ -494,6 +510,7 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/WaterBreathingUpgradeItem.java",
+          "src/main/resources/assets/playerupgrades/items/water_breathing_upgrade.json",
           "src/main/resources/assets/playerupgrades/models/item/water_breathing_upgrade.json"
         ]
       }
@@ -555,7 +572,8 @@
       "metadata": {
         "files": [
           "src/main/java/ca/modmonster/playerupgrades/item/StarryIngotItem.java",
-          "src/main/resources/assets/playerupgrades/models/item/starry_ingot.json"
+          "src/main/resources/assets/playerupgrades/models/item/starry_ingot.json",
+          "src/main/resources/assets/playerupgrades/items/starry_ingot.json"
         ]
       }
     },
@@ -652,7 +670,8 @@
       "item.playerupgrades.diamond_haste_upgrade": "Improved Mining Upgrade",
       "item.playerupgrades.nether_case": "Nether Upgrade Case",
       "item.playerupgrades.iron_strength_upgrade": "Basic Strength Upgrade",
-      "item.playerupgrades.starry_ingot": "Starry Ingot"
+      "item.playerupgrades.starry_ingot": "Starry Ingot",
+      "item.playerupgrades.player_upgrader": "Upgrader"
     }
   },
   "metadata": {
@@ -688,7 +707,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.21.1",
+    "currentGenerator": "neoforge-1.21.8",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "ca.modmonster.playerupgrades"
   },

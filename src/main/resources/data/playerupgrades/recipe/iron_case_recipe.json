@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:iron_ingot"
-    }
+    "a": "minecraft:iron_ingot"
   },
   "result": {
     "id": "playerupgrades:iron_case",

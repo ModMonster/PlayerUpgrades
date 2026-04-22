@@ -7,18 +7,10 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:redstone_block"
-    },
-    "b": {
-      "item": "minecraft:sugar"
-    },
-    "c": {
-      "item": "playerupgrades:iron_speed_upgrade"
-    },
-    "d": {
-      "item": "playerupgrades:diamond_case"
-    }
+    "a": "minecraft:redstone_block",
+    "b": "minecraft:sugar",
+    "c": "playerupgrades:iron_speed_upgrade",
+    "d": "playerupgrades:diamond_case"
   },
   "result": {
     "id": "playerupgrades:diamond_speed_upgrade",

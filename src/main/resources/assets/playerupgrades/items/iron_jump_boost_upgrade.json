@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "playerupgrades:item/iron_jump_boost_upgrade"
+  }
+}
